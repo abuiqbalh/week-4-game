@@ -1,0 +1,80 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>java-game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+    #list{
+        background-color:azure;
+    }
+
+    #targer{
+
+        background-color:aqua;
+    }
+    
+	.common{
+		background-color:rgb(120, 247, 66);
+		margin:%;
+		}
+	
+	.commonBorder{
+	border:2px solid rgb(52, 122, 22);
+	}
+	
+	#image{
+	text-align:center;}
+	
+	h2{
+	text-align}
+    </style>
+</head>
+<body>
+<div class="container commonBorder">
+	<div>
+	<h2>CrystalCollector</h2>
+	</div>
+    
+    
+<div id="list">
+	<h3>Instruction</h3>
+    <ol>
+        <li>To Play click play button</li>
+        <li>You Need to accumulate the target Number</li>
+        <li>Each diamond will get you 1-8 points</li>
+		<li>If you can accumulate Target Number without exceeding it, You win</li>
+		<li>If your accumulated number exceed the Target Number, You lost</li>
+    </ol>
+</div>
+<div id="image">
+    <img id="1"src="dimond.jpg" value="">
+    <img id="2" src="dimond.jpg" value="">
+    <img id="3" src="dimond.jpg" value="">
+    <img id="4" src="dimond.jpg" value="">
+</div>
+<div class="row">
+	<div class="col-md-6 common"> 
+    <h3>Target Number: <span id="target"></span></h3>
+    <p><span id="random"></span></p>
+	</div>
+	<div class="col-md-6 common">
+	<p>Your total score:<span id="score" value=""></span></p>
+	<div>
+    <p>wins:<span id="wins"> </span></p></br>
+    <p>losses:<span id="loss"> </span></p>
+	</div>
+	</div>
+	<button id="play">Play</button>
+	<button id="reset">Reset</button>
+</div>
+
+
+</div>
+</body>
+</html>
